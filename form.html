@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+        <nav aria-labelledby="primary navigation">
+                <a href="http://127.0.0.1:5500/index.html#">Home</a>
+            
+    <div>
+      <form action="https://httpbin.org/get" method=" get">
+      <fieldset>
+        <legend>
+          <h1><em>Personal Info</em></h1>
+        </legend>
+        <p>
+          <label for="firstName">FirstName:</label>
+          <input
+            type="text"
+            name="Firstname"
+            placeholder="Enter Your FirstName"
+            autocomplete="Enter firstname"
+            required
+            autofocus
+            id="firstName"
+          />
+        </p>
+          <label for="gender">Gender:</label>
+          <input
+            type="text"
+            name="gender"
+            id="gender"
+            list="gender-list"
+            placeholder="Select Gender"
+          />
+          <datalist id="gender-list">
+            <option value="male"></option>
+            <option value="female"></option>
+          </datalist>
+        </p>
+
+        <p>
+          <label for="Birth">Date of Birth:</label>
+          <input
+            type="text"
+            name="Birth"
+            placeholder="YYYY-MM-DD"
+            autocomplete="on"
+            required
+            id="Birth"
+          />
+        </p>
+        <p>
+          <label for="Email">Email Address:</label>
+          <input
+            type="text"
+            name="Email"
+            placeholder="Enter email address"
+            autocomplete="on"
+            required
+            id="email"
+          />
+        </p>
+        <p>
+          <label for="Phone">Phone Number:</label>
+          <input
+            type="tel"
+            name="Phone"
+            placeholder="08080722568"
+            required
+            id="Phone"
+            pattern="[0-9]{4}[0-9]{3}[0-9]{4}"
+          />
+        </p>
+        <p>
+          <label for="country">Country:</label>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            list="Country-list"
+            placeholder="Select Country"
+          />
+          <datalist id="country-list">
+            <option value="Algeria">Algeria</option>
+            <option value="Belgium"></option>
+            <option value="Canada"></option>
+            <option value="Denmark"></option>
+            <option value="El Salvador"></option>
+            <option value="France"></option>
+            <option value="Ghana"></option>
+            <option value="Hawaii"></option>
+            <option value="India"></option>
+            <option value="Japan"></option>
+            <option value="Korea"></option>
+            <option value="Laos"></option>
+            <option value="Mozambique"></option>
+            <option value="Nigeria"></option>
+            <option value="Oman"></option>
+            <option value="Panama"></option>
+            <option value="Qatar"></option>
+            <option value="Rwanda"></option>
+            <option value="South Africa"></option>
+            <option value="Thailand"></option>
+            <option value="Uganda"></option>
+            <option value="Venezuela"></option>
+            <option value="Wales"></option>
+            <option value="Yemen"></option>
+            <option value="Zambia"></option>
+          </datalist>
+        </p>
+        <p>
+          <label for="Residence">State/City of Residence:</label>
+          <input
+            type="text"
+            name="Residence"
+            placeholder="Enter your state of residence"
+            autocomplete="on"
+            required
+            id="Residence"
+          />
+        </p>
+
+        <p>
+          <label for="channel">How did you hear about Us?:</label>
+          <input type="text" name="channel" id="chnannel" list="channel" placeholder="Select channel"/>
+          <datalist id="channel-list">
+            <option value="LinkIn"></option>
+            <option value="Youtube"></option>
+            <option value="Friend"></option>
+            <option value="Twitter/X"></option>
+            <option value="Tiktok"></option>
+            <option value="WhatsApp"></option>
+            <option value="Bill board"></option>
+            <option value="Sales officer"></option>
+            <option value="Face book"></option>
+            <option value="other"></option>
+          </datalist>
+        </p> 
+      </fieldset>
+     <button type="submit">submit</button>
+     <button type="submit"
+     formaction="https://httpbin.org/get" formmethod="post">post</button>
+     <button type="reset">Reset</button>
+  </body>
+</html>
