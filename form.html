@@ -8,7 +8,7 @@
   <body>
     <header>
         <nav aria-labelledby="primary navigation">
-                <a href="http://127.0.0.1:5500/index.html#">Home</a>
+                <a href="./index.html">Home</a>
             
     <div>
       <form action="https://httpbin.org/get" method=" get">
@@ -81,7 +81,7 @@
             type="text"
             name="country"
             id="country"
-            list="Country-list"
+            list="country-list"
             placeholder="Select Country"
           />
           <datalist id="country-list">
@@ -126,9 +126,15 @@
 
         <p>
           <label for="channel">How did you hear about Us?:</label>
-          <input type="text" name="channel" id="chnannel" list="channel" placeholder="Select channel"/>
+          <input 
+          type="text"
+          name="channel"
+          id="channel" 
+          list="channel-list" 
+          placeholder="Select channel"
+          />
           <datalist id="channel-list">
-            <option value="LinkIn"></option>
+            <option value="LinkedIn"></option>
             <option value="Youtube"></option>
             <option value="Friend"></option>
             <option value="Twitter/X"></option>
